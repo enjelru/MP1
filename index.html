@@ -1,15 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoRender | MP1</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
-<body>
-  
-  <!-- Bootstrap Bundle -->
-  <script src="js/bootstrap.bundle.min.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoRender | MP1</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+      section {
+        padding: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top content -->
+    <Section>  
+        <!-- menu -->
+        <div class="container-fluid">
+          <!-- navbar -->
+          <nav class="navbar navbar-expand-md">
+            <div class="container-lg">
+              <!-- toggle button for mobile nav -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <!-- navbar brand -->
+              <a href="#" class="navbar-brand">CoRender</a>
+
+              <!-- offcanvas -->
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="main-nav" aria-labelledby="main-navLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="main-navLabel">
+                    Welcome
+                  </h5>
+                  <button class="btn-close rounded-circle shadow-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+              </div>
+              <!-- navbar links -->
+              <div class="offcanvas-body navbar-collapse justify-content-center" id="main-nav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="#project" class="nav-link">PROJECT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#services" class="nav-link">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- search bar -->
+              <form class="d-flex" role="search">
+                <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-sucess" type="submit">
+                  <i class="bi bi-search"></i>
+                </button>
+              </form>
+            </div>
+          </nav>
+        </div> 
+        <!-- end of menu -->
+
+        <!-- carousel -->
+        <div class="container-fluid">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://images.adsttc.com/media/images/63dc/007e/e8da/b07b/f99a/92d3/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_5.jpg?1675362437" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.adsttc.com/media/images/63dc/1e15/e8da/b067/7f17/fb83/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_25.jpg?1675370011" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://images.adsttc.com/media/images/63dc/1c7e/e8da/b067/7f17/fb68/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_24.jpg?1675369605" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- end of carousel -->
+
+    </Section>
+    <!-- Bootstrap Bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
