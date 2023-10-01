@@ -1,9 +1,10 @@
 * {
   scroll-behavior: smooth;
+  /* margin: 0; */
 }
 
 section {
-  padding: 60px;
+  padding: 0 60px 0 60px;
 }
 
 .carousel-item > img {
