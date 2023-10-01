@@ -1,0 +1,17 @@
+* {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px;
+}
+
+.carousel-item > img {
+  display: block;
+  aspect-ratio: 4 / 3;
+  /* object-fit: cover;
+  object-position: center;  */
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+
+}

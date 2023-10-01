@@ -7,29 +7,27 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <style>
-      section {
-        padding: 60px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
+   
   </head>
   <body>
     <!-- Top content -->
     <Section>  
         <!-- menu -->
-        <div class="container-fluid">
+        <div class="container-fluid px-0">
           <!-- navbar -->
-          <nav class="navbar navbar-expand-md">
-            <div class="container-lg">
-              <!-- toggle button for mobile nav -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <nav class="navbar navbar-collapse-lg">
+            <div class="container-lg bg-dark">
+              <!-- navbar brand left-nav -->
+              <a href="#" class="navbar-brand border-0" data-bs-toggle="offcanvas" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">CoRender</a>
+              <!-- toggle button for mobile right nav -->
+              <!-- <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#right-nav" aria-controls="right-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
-              <!-- navbar brand -->
-              <a href="#" class="navbar-brand">CoRender</a>
+              </button> -->
+            
 
               <!-- offcanvas -->
-              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="main-nav" aria-labelledby="main-navLabel">
+              <div class="offcanvas offcanvas-start d-block" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="main-nav" aria-labelledby="main-navLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="main-navLabel">
                     Welcome
@@ -37,8 +35,8 @@
                   <button class="btn-close rounded-circle shadow-none" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
               </div>
-              <!-- navbar links -->
-              <div class="offcanvas-body navbar-collapse justify-content-center" id="main-nav">
+              <!-- left navbar links -->
+              <div class="collapse navbar-collapse-md justify-content-end" id="main-nav">
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <a href="#project" class="nav-link">PROJECT</a>
@@ -54,13 +52,31 @@
                   </li>
                 </ul>
               </div>
-              <!-- search bar -->
-              <form class="d-flex" role="search">
-                <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-sucess" type="submit">
-                  <i class="bi bi-search"></i>
-                </button>
-              </form>
+              <!-- right navbar links -->
+              <div class="collapse navbar-collapse d-flex justify-content-sm-end px-0" id="right-nav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="#project" class="nav-link">PROJECT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#services" class="nav-link">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#about" class="nav-link">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#contact" class="nav-link">CONTACT</a>
+                  </li>
+                </ul>
+                <!-- toggle button for mobile right nav -->
+                <form class="navbar-toggler d-flex" role="search" type="button" data-bs-toggle="collapse" data-bs-target="#right-nav" aria-controls="right-nav" aria-expanded="false" aria-label="Toggle navigation">
+                  <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-sucess" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                </form>
+              </div>
+
             </div>
           </nav>
         </div> 
@@ -72,17 +88,22 @@
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button class="" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <!-- slideshow carousel -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://images.adsttc.com/media/images/63dc/007e/e8da/b07b/f99a/92d3/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_5.jpg?1675362437" alt="...">
+                <img class="img-fluid object-fit-cover" src="https://images.adsttc.com/media/images/63dc/007e/e8da/b07b/f99a/92d3/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_5.jpg?1675362437" alt="...">
+                <div class="carousel-caption container-md-8">
+                  <p class="h4">Residential</p>
+                  <h2 class="fs-2">Classic trope</h2>
+                </div>
               </div>
               <div class="carousel-item">
-                <img src="https://images.adsttc.com/media/images/63dc/1e15/e8da/b067/7f17/fb83/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_25.jpg?1675370011" class="d-block w-100" alt="...">
+                <img class="img-fluid object-fit-cover" src="https://images.adsttc.com/media/images/63dc/1e15/e8da/b067/7f17/fb83/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_25.jpg?1675370011" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="https://images.adsttc.com/media/images/63dc/1c7e/e8da/b067/7f17/fb68/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_24.jpg?1675369605" class="d-block w-100" alt="...">
+                <img class="img-fluid object-fit-cover" src="https://images.adsttc.com/media/images/63dc/1c7e/e8da/b067/7f17/fb68/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_24.jpg?1675369605" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -96,6 +117,7 @@
           </div>
         </div>
         <!-- end of carousel -->
+
 
     </Section>
     <!-- Bootstrap Bundle -->
