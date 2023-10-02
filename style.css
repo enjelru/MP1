@@ -3,10 +3,6 @@
   /* margin: 0; */
 }
 
-header {
-  /* padding: 0 50px 0 50px; */
-}
-
 .carousel-item > img {
   aspect-ratio: 4 / 3;
   /* object-fit: cover;
@@ -40,4 +36,37 @@ header {
 .card > img:hover {
   transform: scale(1.1);
   transition: 0.3s;
+}
+
+.btn span {
+  transition: all 0.5s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: -8px;
+  vertical-align: middle;
+  right: -20px;
+  transition: 0.5s;
+  font-size: 1.5rem;
+}
+
+.btn span {
+  padding-right: 25px;
+}
+
+.btn:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+.serviceCard > img {
+  display: block;
+  transition: all 200ms ease-in-out;
+  height: 100%;
+  aspect-ratio: 2 / 1;
 }
