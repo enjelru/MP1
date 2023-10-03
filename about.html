@@ -11,6 +11,154 @@
    
   </head>
   <body>
+    <header id="home">  
+      <!-- menu -->
+      <div class="container-fluid d-flex flex-column justify-content-between align-items-center px-md-5">
+        <!-- navbar -->
+        <div class="container-lg px-0 mx-0">
+          <!-- left navbar -->
+          <nav class="navbar navbar-expand-lg fixed-top py-0">
+            <div class="container-lg px-0">
+              <!-- navbar brand left-nav -->
+              <a class="navbar-brand fw-bold fs-3 mx-md-4 px-md-2 ps-md-0 ps-2" href="index.html" target="_self" rel="noopener noreferrer">K<span class="text-warning text-uppercase">yub</span></a>
+              <!-- toggle button for mobile right nav -->
+              <button class="navbar-toggler border-0 px-2 px-lg-0 py-0 me-sm-4 ms-2 pe-sm-2 pe-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#rightNav" aria-controls="rightNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- offcanvas header rightNav -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="rightNav" aria-labelledby="rightNavLabel">
+                <div class="offcanvas-header">
+                  <form class="d-flex" role="search" id="rightNav">
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <i class="bi bi-search"></i>
+                      </span>
+                      <input class="form-control me-2" type="search" placeholder="LANDSCAPE" aria-label="Search">
+                    </div>
+                  </form>
+                  <button type="button" class="btn-close rounded-circle shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- offcanvas body -->
+                <div class="offcanvas-body justify-content-end justify-content-lg-center">
+                  <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                      <a href="project.html" class="nav-link">PROJECT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="service.html" class="nav-link">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="about.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contact" class="nav-link">CONTACT</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- offcanvas rightNavBar ends here -->
+              <!-- search bar -->
+              <div class="ps-2 ps-md-0 pe-md-4 pe-0 me-md-2 me-0 d-none d-lg-inline">
+                <form class="d-flex" role="search">
+                  <button class="btn border-0 px-1" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </nav>
+          <!-- end of menu -->
+        </div>
+      </div> 
+    </header>
+
+    <section id="about" class="py-md-5 py-0" style="margin-top: 0px;">
+      <div class="container-lg text-center pb-md-4 pb-4 text-uppercase">
+        <h2>About Us</h2>
+      </div>
+      <svg style="width:100%; height:40;">
+        <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(205, 205, 205);stroke-width:5"/>
+      </svg>
+      <div class="container-lg px-0">
+        <div class="d-flex px-md-2 mx-md-3 align-items-center flex-wrap my-md-3 pt-4 pb-md-4 pb-5">
+          <div class="col-lg-5 col-md-6 mx-md-0 mx-4">
+            <!-- card about text -->
+            <div class="card-text pe-md-4 py-0">
+              <div class="card-body text-center text-left text-md-start">
+                <h4 class="card-title mb-4">About our studio</h4>
+                <p class="card-subtext m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum animi beatae, deserunt assumenda eum molestiae nesciunt distinctio fugit nihil sint?</p>
+              </div>
+              <div class="container-lg mt-4 mb-md-0 mb-5 p-0 text-center text-left text-md-start">
+                <button type="button" class="btn btn-primary">Learn More</button>
+              </div>
+            </div>
+          </div>
+            <!-- about image container -->
+          <div class="col-lg-5 col-md-6">
+            <div class="serviceCard ">
+              <img src="assets/biophilic-interiors-21-projects-that-blend-architecture-with-nature_5.jpg" alt="background-image" class="img-fluid  object-fit-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- end of about us -->
+
+    <!-- footer -->
+    <section>
+      <svg style="width:100%; height:5;">
+        <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(205, 205, 205);stroke-width:5" />
+      </svg>
+      <div class="container-lg px-0">
+        <div class="d-flex justify-content-between py-md-3 mx-md-4 mx-4 flex-wrap align-items-center">
+          <div class="col-lg-8 col-md-6 col-12 py-4 my-md-0">
+            <h3 class="text-center text-md-start">
+              <a href="index.html" class=" link-underline link-underline-opacity-0 text-dark fw-bold">K<span class="text-warning text-uppercase">yub</span></a></h3>
+            <div class="list-group-flush d-flex justify-content-md-start justify-content-center gap-4">
+              <a href="project.html" class="list-group-item">
+                Project</i>
+              </a>
+              <a href="service.html" class="list-group-item">
+                Services</i>
+              </a>
+              <a href="about.html" class="list-group-item">
+                About</i>
+              </a>
+              <a href="#contact" class="list-group-item">
+                Contact</i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 my-3 my-md-0">
+            <div class="d-flex flex-column">
+              <div class="list-group-flush d-flex gap-4 my-2 my-md-0 justify-content-md-end justify-content-center py-2">
+                <a href="https://www.facebook.com/" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-facebook fs-4"></i>
+                </a>
+                <a href="https://www.behance.net/" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-behance fs-4"></i>
+                </a>
+                <a href="https://www.linkedin.com/" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-4"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-instagram fs-4"></i>
+                </a>
+                <a href="https://www.tiktok.com/en/" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-tiktok fs-4"></i>
+                </a>
+              </div>
+              <p class="text-md-end text-center">&copy 2023 KYUB.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- Bootstrap Bundle -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
