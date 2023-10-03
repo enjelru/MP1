@@ -124,70 +124,115 @@
 
     <!-- project -->
     <section id="#" class="py-md-5 py-0">
-      <div class="container-fluid px-0">
-        <nav class="navbar mt-4 py-0">
-          <div class="container-lg d-flex justify-content-between flex-wrap flex-column flex-md-row px-4">
-            <h3 class="navbar-brand mx-0 fs-3 ms-md-2 text-uppercase my-0">projects</h3>
-            <!-- navtab  -->
-            <div class="nav nav-underline flex-sm-row flex-md-grow-1 ms-md-3 ms-0">
-              <a class="flex-sm-fill text-sm-center nav-link text-dark text-uppercase" aria-current="page" href="#">all</a>
-              <!-- <a class="flex-sm-fill text-sm-center nav-link text-dark" href="#">LATEST</a> -->
-              <a class="flex-sm-fill text-sm-center nav-link text-dark text-uppercase" href="#">residential</a>
-              <a class="flex-sm-fill text-sm-center nav-link text-dark text-uppercase" href="#">commercial</a>
-            </div>
+        <div class="container-lg px-0 ps-0 pb-md-5">
+          <div class="container-lg py-4 text-center">
+            <p class="h3 text-uppercase">projects</p>
           </div>
-        </nav>
-        <svg style="width:100%; height:50;">
-          <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(205, 205, 205);stroke-width:5" />
-        </svg>
-      </div>
+          <svg style="width:100%; height:20;">
+            <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(205, 205, 205);stroke-width:5" />
+          </svg>
+          <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
+              <button class="nav-link" id="nav-residential-tab" data-bs-toggle="tab" data-bs-target="#nav-residential" type="button" role="tab" aria-controls="nav-residential" aria-selected="false">Residential</button>
+              <button class="nav-link" id="nav-commercial-tab" data-bs-toggle="tab" data-bs-target="#nav-commercial" type="button" role="tab" aria-controls="nav-commercial" aria-selected="false">Commercial</button>
+            </div>
+          </nav>
+        </div>
       <!-- END OF NAV -->
-
       <div class="container-lg px-0"> 
-        <!-- project card -->
-        <div class="container-lg px-0">
-          <div class="row justify-content-center g-3 m-0 px-md-4 px-3">
-            <!-- card -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card justify-content-center">
-                <img src="assets/biophilic-interiors-21-projects-that-blend-architecture-with-nature_24.jpg" alt="..." class="card-img img-fluid object-fit-cover">
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card">
-                <img src="assets/biophilic-interiors-21-projects-that-blend-architecture-with-nature_5.jpg" alt="..." class="card-img  img-fluid object-fit-cover">
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="card">
-                <img src="https://images.adsttc.com/media/images/63dc/161e/42a2/a861/3564/6291/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_21.jpg?1675367973" alt="..." class="card-img img-fluid object-fit-cover">
-              </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4 d-none d-md-block">
-              <div class="card">
-                <img src="https://images.adsttc.com/media/images/63dc/161e/42a2/a861/3564/6291/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_21.jpg?1675367973" alt="..." class="card-img img-fluid object-fit-cover">
-              </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4 d-none d-md-block">
-              <div class="card">
-                <img src="https://images.adsttc.com/media/images/63dc/161e/42a2/a861/3564/6291/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_21.jpg?1675367973" alt="..." class="card-img img-fluid object-fit-cover">
-              </div>
-            </div>
-            <div class="col-6 col-md-6 col-lg-4 d-none d-md-block">
-              <div class="card">
-                <img src="https://images.adsttc.com/media/images/63dc/17f5/42a2/a870/6262/0861/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_22.jpg?1675368443" alt="..." class="card-img img-fluid object-fit-cover">
-                <div class="card-img-overlay">
-                  <h5 class="card-title">Card Title</h5>
-                  <p class="card-text">I'm a card</p>
+        <!-- project gallery -->
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab" tabindex="0">
+            <!-- end project gallery grid -->
+            <div class="container-lg px-0">
+              <div class="row justify-content-center g-3 m-0 px-md-4 px-3">
+                <div class="col-12 col-md-6 col-lg-4 residential">
+                  <div class="card justify-content-center">
+                    <img src="assets/biophilic-interiors-21-projects-that-blend-architecture-with-nature_24.jpg" alt="..." class="card-img img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 residential">
+                  <div class="card">
+                    <img src="assets/biophilic-interiors-21-projects-that-blend-architecture-with-nature_5.jpg" alt="..." class="card-img  img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 residential">
+                  <div class="card">
+                    <img src="https://images.adsttc.com/media/images/63dc/161e/42a2/a861/3564/6291/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_21.jpg?1675367973" alt="..." class="card-img img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 commercial">
+                  <div class="card">
+                    <img src="https://images.adsttc.com/media/images/63dc/17f5/42a2/a870/6262/0861/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_22.jpg?1675368443" alt="..." class="card-img img-fluid object-fit-cover">
+                    <div class="card-img-overlay">
+                      <h5 class="card-title">Card Title</h5>
+                      <p class="card-text">I'm a card</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-         <!-- end of peoject cards -->
+          <!-- residential gallery -->
+          <div class="tab-pane fade" id="nav-residential" role="tabpanel" aria-labelledby="nav-residential-tab" tabindex="0">
+            <div class="container-lg px-0">
+              <div class="row justify-content-center g-3 m-0 px-md-4 px-3">
+                <div class="col-12 col-md-6 col-lg-4 residential">
+                  <div class="card">
+                    <img src="https://images.adsttc.com/media/images/650e/0093/67ee/e119/d3aa/030d/slideshow/anna-plus-mallesh-residence-juiceshop-collective_5.jpg?1695417528" alt="..." class="card-img img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 residential">
+                  <div class="card">
+                    <img src="https://images.adsttc.com/media/images/63dc/161e/42a2/a861/3564/6291/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_21.jpg?1675367973" alt="..." class="card-img img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 residential">
+                  <div class="card justify-content-center">
+                    <img src="assets/biophilic-interiors-21-projects-that-blend-architecture-with-nature_24.jpg" alt="..." class="card-img img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 residential">
+                  <div class="card justify-content-center">
+                    <img src="assets/biophilic-interiors-21-projects-that-blend-architecture-with-nature_24.jpg" alt="..." class="card-img img-fluid object-fit-cover">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- commercial tab -->
+          <div class="tab-pane fade" id="nav-commercial" role="tabpanel" aria-labelledby="nav-commercial-tab" tabindex="0">
+            <div class="container-lg px-0">
+              <div class="row justify-content-center g-3 m-0 px-md-4 px-3">
+                <div class="col-12 col-md-6 col-lg-4 commercial">
+                  <div class="card">
+                    <img src="https://images.adsttc.com/media/images/63dc/161e/42a2/a861/3564/6291/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_21.jpg?1675367973" alt="..." class="card-img img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 commercial">
+                  <div class="card">
+                    <img src="https://images.adsttc.com/media/images/63dc/161e/42a2/a861/3564/6291/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_21.jpg?1675367973" alt="..." class="card-img img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 commercial">
+                  <div class="card">
+                    <img src="https://images.adsttc.com/media/images/63dc/161e/42a2/a861/3564/6291/slideshow/biophilic-interiors-21-projects-that-blend-architecture-with-nature_21.jpg?1675367973" alt="..." class="card-img img-fluid object-fit-cover">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 commercial">
+                  <div class="card justify-content-center">
+                    <img src="assets/biophilic-interiors-21-projects-that-blend-architecture-with-nature_24.jpg" alt="..." class="card-img img-fluid object-fit-cover">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+        <!-- end of project gallery -->
         <div class="container-lg my-5 p-0 text-center">
-          <button type="button" class="btn btn-primary">
-            <span>See more projects</span></button>
+          <a href="project.html" role="button" class="btn btn-primary">
+            <span>See more projects</span></a>
         </div>
       </div>
     </section>
