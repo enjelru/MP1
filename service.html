@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYUB | MP1</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+   
+  </head>
+  <body>
+    <header id="home">  
+      <!-- menu -->
+      <div class="container-fluid d-flex flex-column justify-content-between align-items-center px-md-5">
+        <!-- navbar -->
+        <div class="container-lg px-0 mx-0">
+          <!-- left navbar -->
+          <nav class="navbar navbar-expand-lg fixed-top py-0">
+            <div class="container-lg px-0">
+              <!-- navbar brand left-nav -->
+              <a class="navbar-brand fw-bold fs-3 mx-md-4 px-md-2 ps-md-0 ps-2" href="index.html" target="_self" rel="noopener noreferrer">K<span class="text-warning text-uppercase">yub</span></a>
+              <!-- toggle button for mobile right nav -->
+              <button class="navbar-toggler border-0 px-2 px-lg-0 py-0 me-sm-4 ms-2 pe-sm-2 pe-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#rightNav" aria-controls="rightNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- offcanvas header rightNav -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="rightNav" aria-labelledby="rightNavLabel">
+                <div class="offcanvas-header">
+                  <form class="d-flex" role="search" id="rightNav">
+                    <div class="input-group">
+                      <span class="input-group-text">
+                        <i class="bi bi-search"></i>
+                      </span>
+                      <input class="form-control me-2" type="search" placeholder="LANDSCAPE" aria-label="Search">
+                    </div>
+                  </form>
+                  <button type="button" class="btn-close rounded-circle shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- offcanvas body -->
+                <div class="offcanvas-body justify-content-end justify-content-lg-center">
+                  <ul class="navbar-nav justify-content-end">
+                    <li class="nav-item">
+                      <a href="project.html" class="nav-link">PROJECT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="service.html" class="nav-link">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="about.html" class="nav-link">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#contact" class="nav-link">CONTACT</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- offcanvas rightNavBar ends here -->
+              <!-- search bar -->
+              <div class="ps-2 ps-md-0 pe-md-4 pe-0 me-md-2 me-0 d-none d-lg-inline">
+                <form class="d-flex" role="search">
+                  <button class="btn border-0 px-1" type="submit">
+                    <i class="bi bi-search"></i>
+                  </button>
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form>
+              </div>
+            </div>
+          </nav>
+          <!-- end of menu -->
+        </div>
+      </div> 
+    </header>
+
+    <!-- image rendering -->
+    <section id="service" class="py-md-5 py-0" style="margin-top: 80px;">
+      <div class="container-lg text-center pb-md-4 pb-4 text-uppercase">
+        <h2>Our Services</h2>
+      </div>
+      <svg style="width:100%; height:40;">
+        <line x1="0" y1="0" x2="100%" y2="0" style="stroke:rgb(205, 205, 205);stroke-width:5" />
+      </svg>
+
+      <div class="container-lg px-0">
+        <!-- right service -->
+        <div class="d-flex flex-wrap px-md-2 mx-md-4">
+          <div class="col-lg-6 col-md-12 col-12">
+            <!-- start of carousel -->
+            <!-- carousel -->
+            
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner ratio ratio-16x9">
+                  <div class="carousel-item blox active" data-bs-interval="2000">
+                    <img src="https://images.adsttc.com/media/images/650e/009f/071b/b31f/839f/6f43/slideshow/01-1.jpg?1695417528" class="img-fluid object-fit-cover h-100" alt="...">
+                  </div>
+                  <div class="carousel-item blox" data-bs-interval="2000">
+                    <img src="assets/biophilic-interiors-21-projects-that-blend-architecture-with-nature_5.jpg" class="img-fluid object-fit-cover h-100" alt="...">
+                  </div>
+                  <div class="carousel-item blox">
+                    <img src="assets/biophilic-interiors-21-projects-that-blend-architecture-with-nature_5.jpg" class="img-fluid object-fit-cover h-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            
+            <!-- end of carousel -->
+          </div>
+          
+          <div class="col-lg-6 col-md-12 d-flex flex-column mx-md-0">
+            <div class="card-text my-xl-5">
+              <div class="card-body px-md-4 px-4">
+                <h4 class="card-title mb-4 mt-md-5 mt-lg-0 mt-5">Image Rendering</h4>
+                <p class="card-subtext">Renderings are used to help visualize the complete design of an interior space, an exterior facade, a furniture design, etc. Here at KYUB studio creates realistic imagery that highlights the lighting, shadows, colors, textures, and scenery to give your client a  better insight and to emphasize the finished design. We provide various types of renderings, including 3D views, 2D & 3D floor plans, furniture renderings, you name it.</p>
+              </div>
+            </div>
+            <!-- end of div card-text -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- production -->
+    <section id="service" class="py-md-5 py-0" style="margin-top: 80px;">
+      <div class="container-lg px-0">
+        <!-- right service -->
+        <div class="d-flex flex-wrap px-md-2 mx-md-4">
+          <div class="col-lg-6 col-md-12 col-12">
+          <!-- start of carousel -->
+          <div class="ratio ratio-16x9">
+            <img src="https://images.adsttc.com/media/images/6515/e513/1748/5301/7c3c/66f8/slideshow/02-2.jpg?1695933740" alt="an archdaily image" class="img-fluid object-fit-cover">
+          </div>
+          </div>
+          <!-- left card service -->
+          <div class="col-lg-6 col-md-12 d-flex flex-column mx-md-0">
+            <div class="card-text my-xl-5">
+              <div class="card-body px-md-4 px-4">
+                <h4 class="card-title mb-4 mt-md-5 mt-lg-0 mt-5">Production</h4>
+                <p class="card-subtext">For our production work, KYUB studio utilize BIM (building information modeling) software, such as AutoCad and Revit, which allows us to create 2D plans, 3D models and help to create renderings if you choose. AutoCad is ideal for 2D drawings, while Revit is a powerful tool for both 2D drawing and 3D modeling projects.</p>
+              </div>
+            </div>
+            <!-- end of div card-text -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- animation -->
+    <section id="service" class="py-md-5 py-0" style="margin-top: 80px;">
+      <div class="container-lg px-0">
+        <!-- right service -->
+        <div class="d-flex flex-wrap px-md-2 mx-md-4">
+          <div class="col-lg-6 col-md-12 col-12">
+          <!-- start of carousel -->
+          <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oT6f3H5H3ZQ?si=J0QpBAFjj9ynxZkt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.youtube.com/watch?v=qaHGBymcjHg" title="YouTube video" allowfullscreen></iframe> -->
+          </div>
+          </div>
+          <!-- left card service -->
+          <div class="col-lg-6 col-md-12 d-flex flex-column mx-md-0">
+            <div class="card-text my-xl-5">
+              <div class="card-body px-md-4 px-4">
+                <h4 class="card-title mb-4 mt-md-5 mt-lg-0 mt-5">Animation</h4>
+                <p class="card-subtext">Animations help portray the complexity and qualities of a designed space by taking you on a virtual tour.</p>
+                <p class="card-subtext m-0">To see these rendering quality options, please click the button below.</p>
+              </div>
+            </div>
+            <!-- end of div card-text -->
+          </div>
+          <!-- left card service -->
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section class="bg-dark text-white">
+      <div class="container-lg px-0">
+        <div class="d-flex justify-content-between py-md-3 mx-md-4 mx-4 flex-wrap align-items-center">
+          <div class="col-lg-8 col-md-6 col-12 py-4 my-md-0">
+            <h3 class="text-center text-md-start">
+              <a href="index.html" class=" link-underline link-underline-opacity-0 text-white fw-bold">K<span class="text-warning text-uppercase">yub</span></a></h3>
+            <div class="list-group-flush d-flex justify-content-md-start justify-content-center gap-4">
+              <a href="project.html" class="list-group-item">
+                Project</i>
+              </a>
+              <a href="service.html" class="list-group-item">
+                Services</i>
+              </a>
+              <a href="about.html" class="list-group-item">
+                About</i>
+              </a>
+              <a href="#contact" class="list-group-item">
+                Contact</i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 my-3 my-md-0">
+            <div class="d-flex flex-column">
+              <div class="list-group-flush d-flex gap-4 my-2 my-md-0 justify-content-md-end justify-content-center py-2">
+                <a href="https://www.facebook.com/" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-facebook fs-4"></i>
+                </a>
+                <a href="https://www.behance.net/" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-behance fs-4"></i>
+                </a>
+                <a href="https://www.linkedin.com/" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-linkedin fs-4"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-instagram fs-4"></i>
+                </a>
+                <a href="https://www.tiktok.com/en/" class="list-group-item" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-tiktok fs-4"></i>
+                </a>
+              </div>
+              <p class="text-md-end text-center">&copy 2023 KYUB.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Bootstrap Bundle -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
