@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoRender | MP1</title>
+    <title>KYUB | MP1</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -12,13 +12,13 @@
   </head>
   <body>
     <!-- Top content -->
-    <header>  
+    <header id="home">  
       <!-- menu -->
       <div class="container-fluid d-flex flex-column justify-content-between align-items-center px-md-5">
         <!-- navbar -->
         <div class="container-lg px-0 mx-0">
           <!-- left navbar -->
-          <nav class="navbar navbar-expand-lg fixed-top">
+          <nav class="navbar navbar-expand-lg fixed-top py-0">
             <div class="container-lg px-0">
               <!-- navbar brand left-nav -->
               <a class="navbar-brand fw-bold fs-3 mx-md-4 px-md-2 ps-md-0 ps-2" href="#home" target="_self" rel="noopener noreferrer">K<span class="text-warning text-uppercase">yub</span></a>
@@ -51,7 +51,7 @@
                 <div class="offcanvas-body justify-content-end justify-content-lg-center">
                   <ul class="navbar-nav justify-content-end">
                     <li class="nav-item">
-                      <a href="#project" class="nav-link active" aria-current="page">PROJECT</a>
+                      <a href="#project" class="nav-link">PROJECT</a>
                     </li>
                     <li class="nav-item">
                       <a href="#service" class="nav-link">SERVICES</a>
@@ -130,7 +130,7 @@
     <!-- end of carousel -->
 
     <!-- project -->
-    <section id="project">
+    <section id="project" class="py-md-5 py-0">
       <div class="container-fluid px-0">
         <nav class="navbar mt-4 py-0">
           <div class="container-lg d-flex justify-content-between flex-wrap flex-column flex-md-row px-4">
@@ -199,8 +199,8 @@
       </div>
     </section>
 
-    <section id="service" class="py-md-5 py-0">
-      <div class="container-lg text-center pb-md-4 text-uppercase">
+    <section id="service" class="py-md-5 py-0" style="margin-top: 60px;">
+      <div class="container-lg text-center pb-md-4 pb-4 text-uppercase">
         <h2>Our Services</h2>
       </div>
       <svg style="width:100%; height:40;">
@@ -253,7 +253,7 @@
         </div>
       </div>
     </section>
-    <section id="about" class="py-md-5">
+    <section id="about" class="py-md-5" style="margin-top: 60px;">
       <div class="container-lg text-center pb-md-4 pb-4 text-uppercase">
         <h2>About Us</h2>
       </div>
@@ -287,7 +287,7 @@
     <!-- end of about us -->
     
     <section id="contact" class="py-md-5 py-0">
-      <div class="container-lg text-center my-md-5 my-5 text-uppercase">
+      <div class="container-lg text-center pb-md-4 pb-4 text-uppercase">
         <h2>Contact Us</h2>
       </div>
       <svg style="width:100%; height:10;">
@@ -347,23 +347,24 @@
     </section>
 
     <!-- footer -->
-    <section class="bg-secondary text-white">
+    <section class="bg-dark text-white">
       <div class="container-lg px-0">
         <div class="d-flex justify-content-between py-md-5 mx-md-4 mx-4 flex-wrap align-items-center">
           <div class="col-lg-8 col-md-6 col-12 py-4 my-md-0">
-            <h3 class="text-center text-md-start">K<span class="text-warning text-uppercase">yub</span></h3>
+            <h3 class="text-center text-md-start">
+              <a href="#home" class=" link-underline link-underline-opacity-0 text-white fw-bold">K<span class="text-warning text-uppercase">yub</span></a></h3>
             <div class="list-group-flush d-flex justify-content-md-start justify-content-center gap-4">
-              <a href="#" class="list-group-item">
+              <a href="#project" class="list-group-item">
                 Project</i>
               </a>
-              <a href="#" class="list-group-item">
+              <a href="#service" class="list-group-item">
                 Services</i>
               </a>
-              <a href="#" class="list-group-item">
-                Contact</i>
-              </a>
-              <a href="#" class="list-group-item">
+              <a href="#about" class="list-group-item">
                 About</i>
+              </a>
+              <a href="#contact" class="list-group-item">
+                Contact</i>
               </a>
             </div>
           </div>

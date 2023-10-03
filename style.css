@@ -5,7 +5,16 @@
 
 nav {
   background: rgba(255, 255, 255, 0.9);
-  color: #fff;
+}
+
+.offcanvas-body:hover .nav-link:not(:hover) {
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.list-group-flush:hover .list-group-item:not(:hover) {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 .carousel-item > img {
@@ -13,7 +22,7 @@ nav {
   /* object-fit: cover;
   object-position: center;  */
   transition: all 200ms ease-in-out;
-  height: 45vmax;
+  height: 49vmax;
   width: 100%;
 }
 
