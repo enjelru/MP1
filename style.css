@@ -13,32 +13,8 @@ nav {
   transition: 0.3s;
 }
 
-.nav-link:hover {
-  /* color: #198754; */
-  /* color: rgb(28, 28, 28); */
-  /* text-decoration: underline; */
-}
-
-.nav-tabs > .nav-link {
-  /* color: rgb(28, 28, 28); */
-}
-
-.nav-tabs > button {
-  color: #198754;
-  /* color: rgb(28, 28, 28); */
-  /* font-weight: 400; */
-}
-
 .nav-tabs > button:hover {
   color: rgb(28, 28, 28);
-  /* color: #198754; */
-}
-
-.nav-link.res
-
-.offcanvas-body > ul > li > .active {
-  /* text-decoration: underline;
-  text-decoration-thickness: 25%; */
   /* color: #198754; */
 }
 
