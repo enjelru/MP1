@@ -13,9 +13,22 @@ nav {
   transition: 0.3s;
 }
 
+.nav-link:hover {
+  color: rgb(28, 28, 28);
+}
+
+.offcanvas-body > ul > li > .active {
+  /* color: #198754; */
+}
+
 .list-group-flush:hover .list-group-item:not(:hover) {
   opacity: 0.5;
   transition: 0.3s;
+  color: rgb(28, 28, 28);
+}
+
+.list-group-item:hover {
+  color: #198754;
 }
 
 .carousel-item > img {
