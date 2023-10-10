@@ -13,9 +13,19 @@ nav {
   transition: 0.3s;
 }
 
-.nav-tabs > button:hover {
+.nav-tabs > button {
   color: rgb(28, 28, 28);
   /* color: #198754; */
+}
+
+.nav-tabs > button:hover {
+  /* color: rgb(28, 28, 28); */
+  color: #198754;
+}
+
+.nav-tabs > .nav-link.active {
+  /* color: rgb(28, 28, 28); */
+  color: #198754;
 }
 
 .list-group-flush:hover .list-group-item:not(:hover) {
